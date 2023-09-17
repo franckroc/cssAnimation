@@ -1,0 +1,108 @@
+body {
+    background: url(paysage.webp);
+    background-size: 1920px 900px;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+}
+
+.bird {
+    position: relative;
+    top: 30px;
+    width: 20%;
+    left: 100%; 
+    scale: 0.3;
+    animation: fly 14s linear infinite;
+}
+@keyframes fly {
+    0% { left: -20%; }
+    25% {
+        top: 50px;
+        scale: 0.5;
+    }
+    50% {
+        top: 90px;
+        scale: 0.7;
+    }
+    75% {
+        top: 152px;
+        scale: .8;
+    }
+    100% {
+        right: -100px;
+        top: 90px;
+        scale: 0.6;
+    }
+}
+.bird2 {
+    position: absolute;
+    top: 200px;
+    width: 20%;
+    right: 100%; 
+    scale: 0.4;
+    animation: fly2 13s linear infinite;
+}
+@keyframes fly2 {
+    0% { right: -20%; }
+    25% {
+        top: 90px;
+        scale: 0.6;
+    }
+    50% {
+        top: 160px;
+        scale: 0.7;
+    }
+    75% {
+        top: 240px;
+        scale: 0.8;
+    }
+    100% {
+        right: 100%;
+        top: 150px;
+        scale: 0.6;
+    }
+}
+
+.container3, .container3:after, .container3::before {
+    content: "";
+    position: absolute;
+    top: -860px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: radial-gradient(4px 4px at 50px 20px, #fff, transparent),
+                      radial-gradient(6px 6px at 110px 350px, #fff, transparent),
+                      radial-gradient(3px 3px at 170px 140px, #dfdfdf, transparent),
+                      radial-gradient(4px 4px at 250px 460px, #fff, transparent),
+                      radial-gradient(6px 6px at 340px 40px, #fff, transparent),
+                      radial-gradient(4px 4px at 410px 330px, #dfdfdf, transparent),
+                      radial-gradient(6px 6px at 500px 550px, #fff, transparent),
+                      radial-gradient(4px 4px at 570px 160px, #dfdfdf, transparent),
+                      radial-gradient(3px 3px at 660px 250px, #fff, transparent),
+                      radial-gradient(5px 5px at 740px 760px, #fff, transparent),
+                      radial-gradient(4px 4px at 810px 30px, #fff, transparent),
+                      radial-gradient(6px 6px at 880px 650px, #dfdfdf, transparent),
+                      radial-gradient(4px 4px at 950px 270px, #fff, transparent),
+                      radial-gradient(3px 3px at 1020px 460px, #fff, transparent),
+                      radial-gradient(5px 5px at 1100px 30px, #dfdfdf, transparent),
+                      radial-gradient(4px 4px at 1180px 820px, #fff, transparent),
+                      radial-gradient(6px 6px at 1250px 650px, #fff, transparent),
+                      radial-gradient(3px 3px at 1310px 40px, #dfdfdf, transparent),
+                      radial-gradient(4px 4px at 1390px 360px, #fff, transparent),
+                      radial-gradient(6px 6px at 1450px 740px, #fff, transparent),
+                      radial-gradient(4px 4px at 1520px 130px, #dfdfdf, transparent),
+                      radial-gradient(6px 6px at 1590px 50px, #fff, transparent),
+                      radial-gradient(4px 4px at 1660px 660px, #dfdfdf, transparent),
+                      radial-gradient(6px 6px at 1730px 250px, #fff, transparent),
+                      radial-gradient(4px 4px at 1800px 860px, #dfdfdf, transparent),
+                      radial-gradient(6px 6px at 1860px 50px, #fff, transparent);
+    background-size: 860px 860px;
+    animation: snowfall 10s linear infinite ;
+}     
+@keyframes snowfall {
+    100% { transform: translateY(860px); }
+}
+
+
